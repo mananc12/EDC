@@ -1,0 +1,136 @@
+  // .admin-container {
+  //   display: flex;
+  //   // justify-content: space-between;
+  // }
+
+.sidebar-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 332px;
+
+  &__card {
+    text-align: center;
+    width: 300px;
+    background: #fcfcfc;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+
+    &-title {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    &-button {
+      font-size: 14px;
+      background: #b4cd93;
+      border: none;
+      border-radius: 5px;
+      padding: 0.3rem 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    &-list {
+      &--flex-wrap {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0.2rem;
+      margin: 0.2rem;
+      & button {
+        font-weight: 600;
+        background: rgb(220, 235, 235);
+        padding: 0.2rem 0.5rem;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.card {
+  &__avatar img {
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  &__meeting-name {
+    font-weight: 600;
+  }
+}
+
+.user-profile {
+  display: flex;
+  width: 300px;
+  padding: 1rem;
+  margin: 1rem;
+  align-items: center;
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &__info {
+    margin-left: 1rem;
+    &-name {
+      font-weight: 600;
+    }
+    &-type {
+      font-size: 14px;
+    }
+  }
+
+  &__notification {
+    background-color: rgb(230, 240, 240);
+    width: 40px;
+    height: 40px;
+    padding: 0.4rem;
+    border-radius: 50%;
+    margin-left: auto;
+
+    &-image {
+      margin: auto;
+    }
+  }
+}
+
+.date-time {
+  width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  background: #fcfcfc;
+  border-radius: 5px;
+
+  &__hours,
+  &__minutes,
+  &__unit {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #b4cd93;
+    border-radius: 5px;
+    margin: 0.3rem;
+    line-height: 30px;
+  }
+
+  &__unit {
+    background-color: #b4cd93;
+  }
+
+  &__date {
+    margin-left: 1rem;
+    font-weight: 600;
+  }
+}

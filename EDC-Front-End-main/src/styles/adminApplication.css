@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.admin-application-container {
+  width: 740px;
+  flex: 1;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  /* border: 1px solid black; */
+}
+
+.admin-application-container > .search-bar {
+  margin: 0.5rem;
+}
+
+.search-bar {
+  display: flex;
+  width: 97%;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.search-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4c4c4c;
+}
+
+.search-input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+.search-input,
+textarea {
+  background-color: #fafafa;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-icon {
+  padding: 2px 10px;
+}
+
+.stats-box {
+  height: 78px;
+}
+
+.stats-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/pattern-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+.stats-box-overlay {
+  padding: 10px;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.6);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.stats-box-overlay h2 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: white;
+}
+
+.stats-box-overlay p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.last30-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 144px;
+}
+
+.last30-wrapper .header-text {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.stats-components-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.all-applications-wrapper {
+  /* border: 1px solid black; */
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.all-applications-header {
+  padding-left: 2rem;
+  font-weight: 600;
+  font-size: 24px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.all-applications-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.all-applications-header-left h2 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.all-applications-header-left p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #b3b3b3;
+}
+
+.all-applications-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.filter-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  gap: 6px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.all-applications-body {
+  width: 100%;
+  /* border: 2px solid red; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.all-applications-footer {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #4c4c4c;
+  display: flex;
+  gap: 24px;
+  background: #f7f7f7;
+  border-radius: 0px 0px 4px 4px;
+  padding: 22px 0px 22px 24px;
+}
+
+.page-nums {
+  display: flex;
+  gap: 8px;
+}
+.page-nums button {
+  background: #e6e6e6;
+  border-radius: 50%;
+  padding: 2px 7px;
+}
+.page-nums .active {
+  background: rgb(224, 237, 233);
+  color: #427a5b;
+}
+
+.previous-page {
+  cursor: pointer;
+}
+.next-page {
+  cursor: pointer;
+}
+
+.calendar-container {
+  width:95%;
+  margin: auto;
+  margin-block:2rem
+}
+
+.calendar-section {
+  margin-top: 4rem;
+  margin-left: 1rem;
+}
+
+.calendar-section-description {
+  max-width: 320px;
+}
+
+.calendar-section-head {
+  margin-left: 2rem;
+}
+
+.calendar {
+  width: 320px;
+  height: 340px;
+  margin: 1rem 1rem 0 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 1rem;
+}
+
+.calendar-table {
+  flex: 1;
+}

@@ -1,0 +1,62 @@
+/* eslint-disable import/no-extraneous-dependencies */
+const mongoose = require('mongoose')
+
+const SecondStageStartupSupportSchema = new mongoose.Schema(
+  {
+    startupId: { type: String, required: true },
+    incubationId: { type: String, required: true },
+    title: { type: String, required: true },
+    problemDescription: { type: String, required: true },
+    solutionDescription: { type: String, required: true },
+    uniquenessDescription: { type: String, required: true },
+    startupSector: { type: String, required: true },
+    innovationType: { type: String, required: true },
+    currentStage: { type: String, required: true },
+    startupProgram: { type: String, required: true },
+    startupStatus: { type: String, required: true },
+    startupGrade: { type: String, required: true },
+    programStartDate: { type: Date, required: true },
+    yuktiInnovationId: { type: String, required: true },
+    yuktiPortalUserId: { type: String, required: true },
+    yuktiPortalPassword: { type: String, required: true },
+    teamLeaderName: { type: String, required: true },
+    teamLeaderEmail: { type: String, required: true },
+    teamLeaderContact: { type: String, required: true },
+    teamLeaderCategory: { type: String, required: true },
+    teamLeaderId: { type: String, required: true },
+    organisationName: { type: String, required: true },
+    teamMembers: { type: [String], required: true },
+    teamMemberCategory: { type: String, required: true },
+    spoc: { type: String, required: true },
+    externalMentor: { type: String, required: true },
+    incubationDate: { type: Date, required: true },
+    graduationDate: { type: Date, required: true },
+    receivedFunding: { type: Boolean, required: true },
+    fundingAgency: { type: String, required: true },
+    fundSanctionDate: { type: Date, required: true },
+    fundingAmount: { type: Number, required: true },
+    registeredCompany: { type: Boolean, required: true },
+    companyType: { type: String, required: true },
+    cinUdhyamRegistrationNo: { type: String, required: true },
+    companyRegistrationDate: { type: Date, required: true },
+    dpiitRecognised: { type: Boolean, required: true },
+    dpiitCertificateNo: { type: String, required: true },
+    incubatedAt: { type: String, required: true },
+    ipFilledGranted: { type: Boolean, required: true },
+    ipTypes: { type: [String], required: true },
+    ipDetails: { type: String, required: true },
+    revenueGeneration: { type: Number, required: true },
+    numOfEmployees: { type: Number, required: true },
+    folderLink: { type: String, required: true },
+    createdByName: { type: String, required: true },
+    createdByEmail: { type: String, required: true },
+  },
+  { timestamps: true },
+)
+
+const SecStageStartupSupport = mongoose.model(
+  'second-stage-startup-supports',
+  SecondStageStartupSupportSchema,
+)
+
+module.exports = SecStageStartupSupport

@@ -1,0 +1,48 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-deploy-docker-image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: featch version
+        id: v1 
+        run: |
+         git_hash=$(git rev-parse --short "$GITHUB_SHA")
+         versions=${GITHUB_REF##*/}-$git_hash
+
+      - name: Build the Docker image
+        uses: mr-smithers-excellent/docker-build-push@v6
+        with:
+          image: devops3238/edc-frontend
+          registry: docker.io
+          dockerfile: Dockerfile
+          tags: |
+            latest
+            ${{ steps.v1.versions }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Deploy in EC2
+        env:
+            PRIVATE_KEY: ${{ secrets.EC2_PRIVATE_KEY  }}
+            HOSTNAME : ${{ secrets.HOSTNAME  }}
+            USER_NAME : ${{ secrets.USER_NAME  }}
+            
+        run: |
+          echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
+            docker rm -f edc-frontend | echo true
+            docker system prune --filter=label!=stage=builder -f
+            image_id=$(docker images -a -q)
+            echo $image_id
+            docker rmi -f $image_id | echo true
+            docker run -d -p 80:80 --name edc-frontend devops3238/edc-frontend:latest 
+          '

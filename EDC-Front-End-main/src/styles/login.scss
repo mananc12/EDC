@@ -1,0 +1,232 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Agency FB';
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+}
+
+.banner {
+  display: flex;
+  background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url('../assets/UI/hero.png');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__text {
+    font-size: 6rem;
+    margin: 0;
+    margin-left: 8%;
+    font-weight: 600;
+    @media screen and (max-width: 850px) {
+      font-size: 5rem;
+    }
+    &--1 {
+      color: #3665c5;
+    }
+    &--2 {
+      color: #919fae;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.signup-link {
+  display: flex;
+  justify-content: end;
+  font-family: 'Adamina';
+
+  & p {
+    color: #bdbdbd;
+    margin: 0;
+    margin-right: 5px;
+  }
+}
+
+.login {
+  &__container {
+    padding: 0rem 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    height: 100vh;
+    @media screen and (max-width: 1000px) {
+      padding: 0rem 3rem;
+    }
+    @media screen and (max-width: 700px) {
+      padding: 0rem 5rem;
+    }
+    @media screen and (max-width: 500px) {
+      padding: 0rem 2rem;
+    }
+  }
+
+  &__head {
+    & h2 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__remember {
+    & label {
+      font-size: 12px;
+      margin-left: 5px;
+      color: #747980;
+    }
+
+    & input {
+      vertical-align: middle;
+    }
+    font-family: 'Adamina';
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.input-block {
+  margin: 1rem 0rem;
+
+  & select {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid #a2a2a6;
+    outline: none;
+    margin-top: 3px;
+  }
+
+  &__input {
+    display: flex;
+    border: 1px solid #a2a2a6;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-family: 'Adamina';
+
+    &--dropdown {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+
+  & input {
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-family: 'open sans';
+  }
+  &--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    & input {
+      width: 50px;
+      padding-left: 0;
+    }
+    & p {
+      margin: 0;
+    }
+  }
+  &__terms {
+    margin-bottom: 2rem;
+    & span {
+      margin: 0 3px;
+    }
+  }
+
+  & label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+
+  & span {
+    display: flex;
+    align-items: center;
+  }
+
+  & img {
+    width: 1.2rem;
+    vertical-align: middle;
+  }
+
+  &__error {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: red;
+    margin-top: 2px;
+  }
+}
+
+.hide-password {
+  cursor: pointer;
+}
+
+.submit-btn {
+  font-family: 'Agency FB';
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background: #3665c5;
+  border: none;
+  width: 100%;
+  padding: 10px 28px;
+  border-radius: 6px;
+  &:hover {
+    background: #1752c7;
+  }
+}
+
+.other-login-options {
+  text-align: center;
+  margin-top: 2rem;
+
+  & p {
+    font-weight: 600;
+    color: #747980;
+  }
+
+  &__list {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    max-width: 20rem;
+    margin: auto;
+  }
+
+  &__item {
+    padding: 16px 18px;
+    border: 1px solid #ebe9f1;
+    border-radius: 6px;
+    margin: 0rem;
+    margin-top: 1rem;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+  }
+}

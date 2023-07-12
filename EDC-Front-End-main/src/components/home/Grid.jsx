@@ -1,0 +1,32 @@
+import React from 'react'
+
+function Grid() {
+  return (
+    <svg width="170" height="130" viewBox="0 0 170 130" fill="none">
+      <g opacity="0.8">
+        <circle cx="5" cy="5" r="5" fill="#0193DC" />
+        <circle cx="5" cy="85" r="5" fill="#0193DC" />
+        <circle cx="165" cy="5" r="5" fill="#0193DC" />
+        <circle cx="165" cy="85" r="5" fill="#0193DC" />
+        <circle cx="5" cy="45" r="5" fill="#0193DC" />
+        <circle cx="5" cy="125" r="5" fill="#0193DC" />
+        <circle cx="165" cy="45" r="5" fill="#0193DC" />
+        <circle cx="165" cy="125" r="5" fill="#0193DC" />
+        <circle cx="85" cy="5" r="5" fill="#0193DC" />
+        <circle cx="85" cy="85" r="5" fill="#0193DC" />
+        <circle cx="85" cy="45" r="5" fill="#0193DC" />
+        <circle cx="85" cy="125" r="5" fill="#0193DC" />
+        <circle cx="45" cy="5" r="5" fill="#0193DC" />
+        <circle cx="45" cy="85" r="5" fill="#0193DC" />
+        <circle cx="45" cy="45" r="5" fill="#0193DC" />
+        <circle cx="45" cy="125" r="5" fill="#0193DC" />
+        <circle cx="125" cy="5" r="5" fill="#0193DC" />
+        <circle cx="125" cy="85" r="5" fill="#0193DC" />
+        <circle cx="125" cy="45" r="5" fill="#0193DC" />
+        <circle cx="125" cy="125" r="5" fill="#0193DC" />
+      </g>
+    </svg>
+  )
+}
+
+export default Grid

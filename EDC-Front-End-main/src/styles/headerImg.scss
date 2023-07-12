@@ -1,0 +1,32 @@
+// .image-wrapper {
+//     width: 100%;
+
+//     & img {
+//       width: 100%;
+
+//       object-fit: cover;
+//       @media screen and (min-width: 800px) {
+//         height: 700px;
+//       }
+//       @media screen and (max-width: 500px) {
+//         height: 400px;
+//       }
+//     }
+//   }
+
+.bgImg1 {
+  width: 100%;
+  /* height: 750px; */
+  height: 80vh;
+  position: relative;
+  background-image: url("../assets/parul4.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bgImg1-overlay {
+  height: 100%;
+  /* background-color: rgba(6, 16, 25, 0.698); */
+  background-color: rgba(8, 16, 25, 0.698);
+}

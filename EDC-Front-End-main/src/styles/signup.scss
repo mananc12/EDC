@@ -1,0 +1,69 @@
+.signup {
+  &__nav {
+    font-family: 'Adamina';
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    &-link {
+      display: flex;
+      & span {
+        vertical-align: middle;
+      }
+      & a {
+        margin-left: 5px;
+        text-decoration: none;
+      }
+    }
+    &-current {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      &--1 {
+        color: #bdbdbd;
+      }
+      &--2 {
+        color: #8692a6;
+      }
+      & p {
+        margin: 0;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.login-link {
+  display: flex;
+  font-family: 'Adamina';
+  justify-content: center;
+
+  &--column {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & p {
+    color: #bdbdbd;
+    margin: 0;
+    margin-right: 5px;
+  }
+}
+
+.otpContainer {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem 6rem 0rem;
+  & input {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    width: 2rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #cdced1;
+    background: #f5f6f7;
+  }
+}

@@ -37,7 +37,6 @@ const MeetingManageTable = ({ data, refetch, isLoading }) => {
         })
       },
       filterVariant: 'range',
-      //filterFn: 'between',
       header: 'Date',
       Cell: ({ cell }) => (
         <Box component="span" className="capitalize">

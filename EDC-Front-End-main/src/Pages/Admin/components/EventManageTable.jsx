@@ -36,6 +36,7 @@ const EventManageTable = ({ data, refetch, isLoading }) => {
         })
       },
       header: 'Date',
+      filterVariant: 'range',
       Cell: ({ cell }) => (
         <Box component="span" className="capitalize">
           <span className="font-light text-black"> {cell.getValue()}</span>

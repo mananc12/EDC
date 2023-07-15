@@ -36,6 +36,7 @@ const MeetingManageTable = ({ data, refetch, isLoading }) => {
           day: 'numeric',
         })
       },
+      filterVariant: 'range',
       header: 'Date',
       Cell: ({ cell }) => (
         <Box component="span" className="capitalize">
@@ -131,6 +132,7 @@ const MeetingManageTable = ({ data, refetch, isLoading }) => {
         state={{ isLoading: isLoading }}
         enableRowActions
         columns={columns}
+        enableColumnFilter
         enableStickyHeader
         enableStickyFooter
         enableRowSelection

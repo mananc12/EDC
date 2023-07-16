@@ -52,7 +52,8 @@ const Drawer = ({ notificationsCount }) => {
   const { data } = GetAdminNotifications(state.token)
 
   return (
-    <div className="h-screen max-w-xs flex flex-col justify-between w-full bg-[#e5e5e5]">
+    // <div className="h-screen max-w-xs flex flex-col justify-between w-full bg-[#e5e5e5]">
+      <div className="h-screen max-w-xs flex flex-col justify-between w-full bg-whitesmoke">
       <div className="p-2 h-[9rem] flex flex-col justify-between items-center w-full">
         <img src={AdminLogo} className="pt-5" alt="logo" />
         <div className="w-60">

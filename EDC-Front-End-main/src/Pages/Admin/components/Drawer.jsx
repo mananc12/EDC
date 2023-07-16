@@ -39,7 +39,7 @@ const Drawer = ({ notificationsCount }) => {
   const { pathname } = useLocation()
   const Styles = {
     li: 'flex flex-row justify-start px-2 rounded-md my-1 py-2 hover:bg-gray-100  items-start w-full',
-    liActive: 'flex flex-row bg-[#b4cd93] my-1 py-2  rounded-md justify-start px-2 items-start w-full',
+    liActive: 'flex flex-row bg-red my-1 py-2  rounded-md justify-start px-2 items-start w-full',
     btn: 'flex flex-row',
   }
 

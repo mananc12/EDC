@@ -39,7 +39,7 @@ const Drawer = ({ notificationsCount }) => {
   const { pathname } = useLocation()
   const Styles = {
     li: 'flex flex-row justify-start px-2 rounded-md my-1 py-2 hover:bg-gray-100  items-start w-full',
-    liActive: 'flex flex-row bg-red my-1 py-2  rounded-md justify-start px-2 items-start w-full',
+    liActive: 'flex flex-row bg-[#b4cd93] my-1 py-2  rounded-md justify-start px-2 items-start w-full',
     btn: 'flex flex-row',
   }
 
@@ -52,8 +52,7 @@ const Drawer = ({ notificationsCount }) => {
   const { data } = GetAdminNotifications(state.token)
 
   return (
-    // <div className="h-screen max-w-xs flex flex-col justify-between w-full bg-[#e5e5e5]">
-      <div className="h-screen max-w-xs flex flex-col justify-between w-full bg-whitesmoke">
+    <div className="h-screen max-w-xs flex flex-col justify-between w-full bg-[#e5e5e5]">
       <div className="p-2 h-[9rem] flex flex-col justify-between items-center w-full">
         <img src={AdminLogo} className="pt-5" alt="logo" />
         <div className="w-60">

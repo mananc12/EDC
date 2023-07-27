@@ -76,7 +76,7 @@
 
 1. To add a new week, click on the "Add new week" button at the top. A dropdown will appear.
 
-2. Select the order ("Before" or "After") and the week you want to add the new week before or    after.
+2. Select the order ("Before" or "After") and the week you want to add the new week before or after.
 
 3. After making the selection, click on the "Create" button to add the new week.
 
